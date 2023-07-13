@@ -8,15 +8,6 @@ for h in range(N+1):
 
 print(answer)
 
-
-
-
-
-
-
-
-
-
 # N += 1
 # answer = 0
 # if N >= 23:
