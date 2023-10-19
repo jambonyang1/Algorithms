@@ -13,6 +13,7 @@ def dynamic(N):
 
 print(dynamic(N))
 
+# 실패
 # dp = [0, 0]
 
 # for i in range(2, N+1):
@@ -20,3 +21,6 @@ print(dynamic(N))
 #     dp.append(dp[half] + dp[i - half] + half * (i-half))
 
 # print(dp[N])
+
+# 제일 빠른 사례
+# print((N*N-N)//2)
