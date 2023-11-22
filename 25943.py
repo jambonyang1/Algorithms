@@ -11,11 +11,7 @@ for st in stones:
 diff = abs(l-r)
 choos = [100, 50, 20, 10, 5, 2, 1]
 ans = 0
-while diff > 0:
-    for ch in choos:
-        if diff >= ch:
-            diff -= ch
-            ans += 1
-            break
-    
+for choo in choos:
+    ans += diff // choo
+    diff = diff % choo
 print(ans)
