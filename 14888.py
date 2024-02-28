@@ -30,10 +30,8 @@ for case in cases:
                 result = -((-result) // nums[i])
             else:
                 result //= nums[i]
-    if result > MAX:
-        MAX = result
-    if result < MIN:
-        MIN = result
+    MAX = max(MAX, result)
+    MIN = min(MIN, result)
 
 print(MAX)
 print(MIN)
