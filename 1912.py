@@ -1,3 +1,20 @@
+N = int(input())
+series = list(map(int, input().split()))
+
+# 새로운 풀이
+ans = -1e9
+now = -1e9
+for i in series:
+    if now < 0:
+        now = i
+    else:
+        now += i
+    ans = max(ans, now)
+
+print(ans)
+
+
+# 이전 풀이
 n = int(input())
 array = list(map(int, input().split()))
 
