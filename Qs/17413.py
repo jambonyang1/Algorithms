@@ -22,8 +22,6 @@ answer += word[::-1]
 print(answer)
 
 
-
-
 # S = input()
 
 # answer = ""
